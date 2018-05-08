@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		68264EA820A26D590029567C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EA720A26D590029567C /* AppDelegate.swift */; };
-		68264EAA20A26D590029567C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EA920A26D590029567C /* ViewController.swift */; };
 		68264EAD20A26D590029567C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68264EAB20A26D590029567C /* Main.storyboard */; };
 		68264EAF20A26D5B0029567C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68264EAE20A26D5B0029567C /* Assets.xcassets */; };
 		68264EB220A26D5B0029567C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68264EB020A26D5B0029567C /* LaunchScreen.storyboard */; };
+		68264EC020A26FE20029567C /* RootTabBaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EBF20A26FE20029567C /* RootTabBaViewController.swift */; };
+		68264EC220A2703B0029567C /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC120A2703B0029567C /* PaintViewController.swift */; };
+		68264EC420A270480029567C /* BrushSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC320A270480029567C /* BrushSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68264EA420A26D590029567C /* ARPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68264EA720A26D590029567C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68264EA920A26D590029567C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68264EAC20A26D590029567C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68264EAE20A26D5B0029567C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68264EB120A26D5B0029567C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68264EB320A26D5B0029567C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68264EBF20A26FE20029567C /* RootTabBaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBaViewController.swift; sourceTree = "<group>"; };
+		68264EC120A2703B0029567C /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
+		68264EC320A270480029567C /* BrushSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		68264EBD20A26DCE0029567C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				68264EA920A26D590029567C /* ViewController.swift */,
+				68264EBF20A26FE20029567C /* RootTabBaViewController.swift */,
+				68264EC120A2703B0029567C /* PaintViewController.swift */,
+				68264EC320A270480029567C /* BrushSettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68264EAA20A26D590029567C /* ViewController.swift in Sources */,
+				68264EC420A270480029567C /* BrushSettingViewController.swift in Sources */,
+				68264EC020A26FE20029567C /* RootTabBaViewController.swift in Sources */,
 				68264EA820A26D590029567C /* AppDelegate.swift in Sources */,
+				68264EC220A2703B0029567C /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -331,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = ARPainter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = ARPainter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
