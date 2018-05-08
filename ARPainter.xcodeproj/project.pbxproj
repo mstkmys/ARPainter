@@ -54,14 +54,62 @@
 		68264EA620A26D590029567C /* ARPainter */ = {
 			isa = PBXGroup;
 			children = (
+				68264EBA20A26DA60029567C /* Resources */,
+				68264EB920A26DA00029567C /* Classes */,
 				68264EA720A26D590029567C /* AppDelegate.swift */,
-				68264EA920A26D590029567C /* ViewController.swift */,
-				68264EAB20A26D590029567C /* Main.storyboard */,
-				68264EAE20A26D5B0029567C /* Assets.xcassets */,
-				68264EB020A26D5B0029567C /* LaunchScreen.storyboard */,
 				68264EB320A26D5B0029567C /* Info.plist */,
 			);
 			path = ARPainter;
+			sourceTree = "<group>";
+		};
+		68264EB920A26DA00029567C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68264EBE20A26DD70029567C /* Views */,
+				68264EBD20A26DCE0029567C /* Controllers */,
+				68264EBC20A26DC40029567C /* Utilities */,
+				68264EBB20A26DBD0029567C /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		68264EBA20A26DA60029567C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68264EAE20A26D5B0029567C /* Assets.xcassets */,
+				68264EB020A26D5B0029567C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68264EBB20A26DBD0029567C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68264EBC20A26DC40029567C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		68264EBD20A26DCE0029567C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68264EA920A26D590029567C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68264EBE20A26DD70029567C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68264EAB20A26D590029567C /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.ARPainter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.ARPainter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
