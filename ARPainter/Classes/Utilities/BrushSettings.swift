@@ -16,6 +16,7 @@ class BrushSettings {
         case capsule
         case cone
         case cylinder
+        case pyramid
         case sphere
         case torus
         case tube

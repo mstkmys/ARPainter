@@ -15,6 +15,7 @@
 		68264EC220A2703B0029567C /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC120A2703B0029567C /* PaintViewController.swift */; };
 		68264EC420A270480029567C /* BrushSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC320A270480029567C /* BrushSettingViewController.swift */; };
 		68264EC620A271950029567C /* BrushSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC520A271950029567C /* BrushSettings.swift */; };
+		68264EC820A278120029567C /* ARObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68264EC720A278120029567C /* ARObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		68264EC120A2703B0029567C /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		68264EC320A270480029567C /* BrushSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushSettingViewController.swift; sourceTree = "<group>"; };
 		68264EC520A271950029567C /* BrushSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushSettings.swift; sourceTree = "<group>"; };
+		68264EC720A278120029567C /* ARObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				68264EC520A271950029567C /* BrushSettings.swift */,
+				68264EC720A278120029567C /* ARObject.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68264EC420A270480029567C /* BrushSettingViewController.swift in Sources */,
+				68264EC820A278120029567C /* ARObject.swift in Sources */,
 				68264EC020A26FE20029567C /* RootTabBaViewController.swift in Sources */,
 				68264EA820A26D590029567C /* AppDelegate.swift in Sources */,
 				68264EC220A2703B0029567C /* PaintViewController.swift in Sources */,
