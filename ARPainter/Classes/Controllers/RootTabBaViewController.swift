@@ -9,6 +9,12 @@
 import UIKit
 
 class RootTabBaViewController: UITabBarController {
+    
+    // MARK: - Properties
+    
+    var burushSettings = BrushSettings()
+    
+    // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()

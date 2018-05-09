@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import ARKit
 
 class PaintViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var scnView: ARSCNView!
+    @IBOutlet weak var paintButton: UIButton!
+    
+    // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    // MARK: - Actions
+    
+    @IBAction func paintButtonTapped(_ sender: UIButton) {
+    }
+    
 }
 
 

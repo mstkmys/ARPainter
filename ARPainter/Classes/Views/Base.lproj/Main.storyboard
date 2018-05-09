@@ -46,6 +46,9 @@
                                 <state key="normal" title="Paint">
                                     <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="paintButtonTapped:" destination="4S4-yP-TUe" eventType="touchUpInside" id="RYz-xU-HYj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,6 +64,10 @@
                         <viewLayoutGuide key="safeArea" id="0IL-UF-gB5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Paint" id="pNC-mt-CCc"/>
+                    <connections>
+                        <outlet property="paintButton" destination="D78-h9-Muv" id="KH0-r9-GGR"/>
+                        <outlet property="scnView" destination="nMg-P5-J6x" id="dH0-pK-CF7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjo-A2-Fj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
