@@ -16,14 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="UTq-Gr-YhY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select brush color and type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-9V-ebc">
+                                <rect key="frame" x="66.5" y="30" width="242.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPM-wo-vaN">
+                                <rect key="frame" x="0.0" y="54" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="pkB-TE-aH4"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brush Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-aY-9Ks">
+                                <rect key="frame" x="141.5" y="304" width="92" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FVf-HI-2RT">
+                                <rect key="frame" x="14" y="338" width="347" height="31"/>
+                                <connections>
+                                    <action selector="sizeSliderChanged:" destination="CzK-2h-2EO" eventType="valueChanged" id="HHT-ki-8fS"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-Ux-ptc">
+                                <rect key="frame" x="163" y="412" width="51" height="31"/>
+                                <connections>
+                                    <action selector="spinnigSwitchChanged:" destination="CzK-2h-2EO" eventType="valueChanged" id="sxV-ae-N8r"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spinnnig shapes?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-Og-HJA">
+                                <rect key="frame" x="110" y="378" width="154" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEU-bO-Ko6">
+                                <rect key="frame" x="131" y="417" width="22" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twl-Lf-uub">
+                                <rect key="frame" x="222" y="417" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NrA-aY-9Ks" firstAttribute="top" secondItem="MPM-wo-vaN" secondAttribute="bottom" id="3Dr-xn-I2d"/>
+                            <constraint firstItem="dUO-Ux-ptc" firstAttribute="leading" secondItem="lEU-bO-Ko6" secondAttribute="trailing" constant="10" id="4A4-wt-ErO"/>
+                            <constraint firstItem="dUO-Ux-ptc" firstAttribute="centerX" secondItem="UTq-Gr-YhY" secondAttribute="centerX" id="52A-J1-MW1"/>
+                            <constraint firstItem="FVf-HI-2RT" firstAttribute="top" secondItem="NrA-aY-9Ks" secondAttribute="bottom" constant="10" id="8mi-IL-BUl"/>
+                            <constraint firstItem="lEU-bO-Ko6" firstAttribute="centerY" secondItem="dUO-Ux-ptc" secondAttribute="centerY" id="8ug-d3-O5U"/>
+                            <constraint firstItem="dUO-Ux-ptc" firstAttribute="top" secondItem="dVE-Og-HJA" secondAttribute="bottom" constant="10" id="Af0-cb-cFs"/>
+                            <constraint firstItem="FVf-HI-2RT" firstAttribute="leading" secondItem="b8f-hP-ppF" secondAttribute="leading" constant="16" id="DeQ-sr-Jfd"/>
+                            <constraint firstItem="b1c-9V-ebc" firstAttribute="top" secondItem="b8f-hP-ppF" secondAttribute="top" constant="10" id="HSx-av-WOW"/>
+                            <constraint firstItem="b1c-9V-ebc" firstAttribute="centerX" secondItem="UTq-Gr-YhY" secondAttribute="centerX" id="N83-QS-cKc"/>
+                            <constraint firstItem="dVE-Og-HJA" firstAttribute="centerX" secondItem="UTq-Gr-YhY" secondAttribute="centerX" id="R2E-SH-6jg"/>
+                            <constraint firstItem="twl-Lf-uub" firstAttribute="leading" secondItem="dUO-Ux-ptc" secondAttribute="trailing" constant="10" id="Whs-i4-agj"/>
+                            <constraint firstItem="MPM-wo-vaN" firstAttribute="leading" secondItem="b8f-hP-ppF" secondAttribute="leading" id="YSb-8j-Maj"/>
+                            <constraint firstItem="dVE-Og-HJA" firstAttribute="top" secondItem="FVf-HI-2RT" secondAttribute="bottom" constant="10" id="hy2-ai-QOz"/>
+                            <constraint firstItem="b8f-hP-ppF" firstAttribute="trailing" secondItem="FVf-HI-2RT" secondAttribute="trailing" constant="16" id="icF-Pj-Ewc"/>
+                            <constraint firstItem="MPM-wo-vaN" firstAttribute="trailing" secondItem="b8f-hP-ppF" secondAttribute="trailing" id="jC7-Ac-2ho"/>
+                            <constraint firstItem="twl-Lf-uub" firstAttribute="centerY" secondItem="dUO-Ux-ptc" secondAttribute="centerY" id="pdT-v3-dke"/>
+                            <constraint firstItem="NrA-aY-9Ks" firstAttribute="centerX" secondItem="UTq-Gr-YhY" secondAttribute="centerX" id="tRR-6S-1NY"/>
+                            <constraint firstItem="MPM-wo-vaN" firstAttribute="top" secondItem="b1c-9V-ebc" secondAttribute="bottom" id="vle-El-9Bt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="b8f-hP-ppF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Brush Settings" id="mJU-ex-vmi"/>
+                    <connections>
+                        <outlet property="brushPicker" destination="MPM-wo-vaN" id="70m-9e-YKO"/>
+                        <outlet property="sizeSlider" destination="FVf-HI-2RT" id="nJg-tc-Ac2"/>
+                        <outlet property="spinnigSwitch" destination="dUO-Ux-ptc" id="wHq-ba-jWP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tj-gD-AIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563" y="204"/>
+            <point key="canvasLocation" x="562.39999999999998" y="203.74812593703149"/>
         </scene>
         <!--Paint-->
         <scene sceneID="SlJ-6m-fKi">
@@ -46,9 +121,6 @@
                                 <state key="normal" title="Paint">
                                     <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="paintButtonTapped:" destination="4S4-yP-TUe" eventType="touchUpInside" id="RYz-xU-HYj"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

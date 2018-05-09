@@ -32,11 +32,6 @@ class PaintViewController: UIViewController {
         scnView.session.run(configuration)
     }
     
-    // MARK: - Actions
-    
-    @IBAction func paintButtonTapped(_ sender: UIButton) {
-    }
-    
 }
 
 // MARK: - ARSCNViewDelgate
